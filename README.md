@@ -59,34 +59,34 @@ Ce projet est une application de gestion de projets dans un environnement de bur
 
 ![image](https://github.com/user-attachments/assets/1d321c70-aa20-40ab-a6e3-9bb6d1f64232)
 
-### 4. **Travail à Rendre : Gestion de l'état civil
+### 4. **Travail à Rendre : Gestion de l'état civil**
 
 Ce projet permet de gérer l'état civil des citoyens d'une province en utilisant Hibernate pour la persistance des données. L'application inclut des fonctionnalités pour gérer les hommes, les femmes et les mariages.
 
-## Fonctionnalités
+#### Fonctionnalités
 
 - **Enregistrement des citoyens** : Gestion des informations sur les hommes et les femmes.
 - **Gestion des mariages** : Suivi des mariages réussis et échoués.
 - **Gestion des enfants** : Suivi des enfants d'un couple.
 
-## Structure du projet
+#### Structure du projet
 
-### Couche de persistance
+##### Couche de persistance
 - **Entités** : `Homme`, `Femme`, et `Mariage` dans le package `ma.projet.beans`.
 - **Configuration** : `hibernate.cfg.xml` pour la connexion à la base de données MySQL.
 - **Classe utilitaire** : `HibernateUtil` pour gérer la session Hibernate.
 
-### Couche service
+##### Couche service
 - **Services** : `HommeService`, `FemmeService`, et `MariageService`.
   - Affichage des épouses d'un homme.
   - Calcul du nombre d'enfants d'une femme.
   - Lister les femmes mariées plusieurs fois.
 
-### Programme de test
+##### Programme de test
 - Créer des données pour tester les fonctionnalités (10 femmes et 5 hommes).
 - Afficher les résultats des différentes requêtes.
 
-#### Tables Base de Données :
+###### Tables Base de Données :
 
 ![image](https://github.com/user-attachments/assets/49117714-b252-4f45-8940-7580efe013f1)
 
